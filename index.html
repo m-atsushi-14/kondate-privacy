@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kondate プライバシーポリシー / お問い合わせ</title>
+<style>
+  body{margin:0;background:#FBF8F2;color:#2b2b2b;
+    font-family:-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.8}
+  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  h1{font-size:24px;border-bottom:3px solid #C75B39;padding-bottom:10px}
+  h2{font-size:18px;margin-top:32px;color:#C75B39}
+  ul{padding-left:20px}
+  li{margin:6px 0}
+  .muted{color:#6f6f6f;font-size:13px}
+  code{background:#efe8dc;padding:1px 6px;border-radius:5px}
+  a{color:#2F6FA8}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>kondate（こんだて） プライバシーポリシー</h1>
+  <p class="muted">最終更新日: 2026-06-28</p>
+
+  <p>kondate（以下「本アプリ」）は、利用者のプライバシーを尊重し、取得する情報を必要最小限にとどめます。本ポリシーは、本アプリが取り扱う情報とその目的を説明します。</p>
+
+  <h2>1. 取得する情報</h2>
+  <ul>
+    <li><b>アカウント情報（メールアドレス）</b>：ログイン・本人確認のために取得します（認証基盤 Amazon Cognito）。</li>
+    <li><b>利用者が作成したデータ</b>：レシピ（「うちの料理」）、献立、買い物リスト、食費、タグ等。レシピとプロフィールはサーバー（Amazon DynamoDB）に保存され、献立・買い物リスト・食費は主に端末内に保存されます。</li>
+    <li><b>位置情報（任意）</b>：天気に合わせたヒントを表示するためにのみ使用します。許可した場合に限り、現在地の座標を天気サービス（Open-Meteo）へ送信して天気を取得します。座標を当社サーバーに保存することはありません。許可しなくても本アプリは利用できます。</li>
+    <li><b>AI機能の入力</b>：レシピ生成・献立相談・レシピ検索を使った場合、入力された料理名や相談メッセージを処理のためサーバー（Amazon Bedrock／検索は Tavily）へ送信します。</li>
+  </ul>
+
+  <h2>2. 利用目的</h2>
+  <ul>
+    <li>本アプリの機能提供（ログイン、データの保存・同期、買い物リストの作成）</li>
+    <li>AIによる献立提案・レシピ材料の生成・レシピページの検索（利用者が機能を使った場合）</li>
+    <li>天気に合わせたヒントの表示（位置情報を許可した場合）</li>
+  </ul>
+
+  <h2>3. 第三者への提供・委託</h2>
+  <p>サービス提供に必要な範囲で、以下の外部サービスを利用します。これらの目的以外で個人情報を第三者に販売・提供することはありません。</p>
+  <ul>
+    <li><b>Amazon Web Services（Cognito / DynamoDB / Bedrock）</b>：認証・データ保存・AI処理</li>
+    <li><b>Tavily</b>：レシピページのリンク検索（送信するのは料理名のみ）</li>
+    <li><b>Open-Meteo</b>：天気の取得（位置情報を許可した場合の座標）</li>
+    <li><b>Apple</b>：アプリ配信・課金（将来）</li>
+  </ul>
+
+  <h2>4. 広告・トラッキング</h2>
+  <p>本アプリは広告を表示しません。広告目的のトラッキングや、第三者への行動データの提供は行いません。</p>
+
+  <h2>5. データの保存と削除</h2>
+  <p>アカウントを削除すると、サーバー上のレシピ・プロフィール、および認証情報は削除されます。端末内のデータはアプリの削除で消去されます。削除のご希望や不明点は下記までご連絡ください。</p>
+
+  <h2>6. お子様のプライバシー</h2>
+  <p>本アプリは一般向けで、13歳未満の子供を対象として個人情報を意図的に収集することはありません。</p>
+
+  <h2>7. 本ポリシーの変更</h2>
+  <p>必要に応じて本ポリシーを改定することがあります。重要な変更がある場合はアプリ内またはこのページでお知らせします。</p>
+
+  <h2>8. お問い合わせ（サポート）</h2>
+  <p>本アプリ・本ポリシーに関するお問い合わせは、以下までお願いします。</p>
+  <ul>
+    <li>提供者: Atsushi Morimoto</li>
+    <li>連絡先: <a href="mailto:morimoto.a.aws@gmail.com">morimoto.a.aws@gmail.com</a></li>
+  </ul>
+</div>
+</body>
+</html>
